@@ -4,10 +4,6 @@ class Awsctx < Formula
   url "https://github.com/dtennander/awsctx/archive/v1.3.tar.gz"
   sha256 "659184344bf4d6a7ab25737064d9a336b9bb7fdbc95fad028d84f3dbdd8c545c"
 
-  bottle do
-    cellar :any_skip_relocation
-  end
-
   depends_on "go" => :build
 
   def install
