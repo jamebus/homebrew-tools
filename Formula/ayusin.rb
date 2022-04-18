@@ -1,14 +1,17 @@
 class Ayusin < Formula
   desc "Automated housekeeping tasks"
   homepage "https://github.com/jamebus/ayusin"
-  url "https://github.com/jamebus/ayusin/archive/v0.1.0.tar.gz"
-  sha256 "b0673be9f58333b3d0ebcdc643b95e54c7775988e0f77a41bdc9b51ddd0911db"
+  url "https://github.com/jamebus/ayusin/archive/v0.2.0.tar.gz"
+  sha256 "daf56d57c0ccd139022fa46d724bc4a1f7ec287997edef029f356743e153c5d7"
   head "https://github.com/jamebus/ayusin.git"
 
+  depends_on "debianutils"
+
   def install
-    bin.install "ayusin"
+    system "make", "prefix=#{prefix}", "install"
   end
 
-  # test do
-  # end
+  test do
+    assert_match " Completed: ", shell_output("#{bin}/ayusin -n")
+  end
 end
