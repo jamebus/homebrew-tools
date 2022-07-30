@@ -1,8 +1,8 @@
 class Impake < Formula
   desc "Easy ephemeral file sharing"
   homepage "https://github.com/jamebus/impake"
-  url "https://github.com/jamebus/impake/archive/v1.0.1.tar.gz"
-  sha256 "e477759eca331c7b18d02f513382d72b1727b569b29ccb0cfdcfa3727c758d7c"
+  url "https://github.com/jamebus/impake/archive/v1.0.2.tar.gz"
+  sha256 "fbc9ce4a065e8da4079868e322733aa6ee654db219a05098d0ba9789d17d6fb0"
   head "https://github.com/jamebus/impake.git"
 
   depends_on "p7zip"
