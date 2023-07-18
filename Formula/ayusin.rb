@@ -1,8 +1,8 @@
 class Ayusin < Formula
   desc "Automated housekeeping tasks"
   homepage "https://github.com/jamebus/ayusin"
-  url "https://github.com/jamebus/ayusin/archive/v1.0.0.tar.gz"
-  sha256 "72555e4ca67523d786390b9c1344637f295ff47bc1b03ca30d47e1ddb44aafeb"
+  url "https://github.com/jamebus/ayusin/archive/v1.1.0.tar.gz"
+  sha256 "f284aa37e5c78850d477336158b17e3c19f72d5d9433dc8f8a27cfa458f38b23"
   head "https://github.com/jamebus/ayusin.git"
 
   depends_on "debianutils"
