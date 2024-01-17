@@ -1,8 +1,8 @@
 class Pagpapanatili < Formula
   desc "Backup tooling based on restic and resticprofile"
   homepage "https://github.com/jamebus/pagpapanatili"
-  url "https://github.com/jamebus/pagpapanatili/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "44439102ab9463cdc3e1a81eec698b44ca6368f91a8906cfe6c1e814b4d4bc95"
+  url "https://github.com/jamebus/pagpapanatili/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "fde460290d3bbef685e79c7ba00958771a0226017b8a169a34d5d7695c82a69c"
   head "https://github.com/jamebus/pagpapanatili.git", branch: "main"
 
   depends_on "awscli"
