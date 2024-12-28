@@ -1,8 +1,8 @@
 class Pagpapanatili < Formula
   desc "Backup tooling based on restic and resticprofile"
   homepage "https://github.com/jamebus/pagpapanatili"
-  url "https://github.com/jamebus/pagpapanatili/archive/refs/tags/v2.0.2.tar.gz"
-  sha256 "a6727dd1c1579e59a56614632fdbe5bdf700d45e0a58590e0fb287d364ddee7d"
+  url "https://github.com/jamebus/pagpapanatili/archive/refs/tags/v2.0.3.tar.gz"
+  sha256 "41d1bfac8473de2630fe82ccafa36bfb56629d42172f2429285940cbf15d4584"
   head "https://github.com/jamebus/pagpapanatili.git", branch: "main"
 
   depends_on "awscli"
@@ -17,6 +17,6 @@ class Pagpapanatili < Formula
   end
 
   test do
-    assert_match " exec resticprofile --dry-run", shell_output("#{bin}/pag -n")
+    assert_match " exec resticprofile --dry-run", shell_output(bin/"pag -n")
   end
 end
