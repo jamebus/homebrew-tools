@@ -1,8 +1,8 @@
 class Kalye < Formula
   desc "Quickly find your IP address"
   homepage "https://github.com/jamebus/kalye"
-  url "https://github.com/jamebus/kalye/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "28d6673900975652f71880c934311f36fc7d701073a7784c550347efb1ceca03"
+  url "https://github.com/jamebus/kalye/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "565900b72db26429a0d98c5beca92376ef66b0dbbf1e64aa9f775724e24b4307"
   head "https://github.com/jamebus/kalye.git", branch: "main"
 
   depends_on "gum"
@@ -14,6 +14,6 @@ class Kalye < Formula
   end
 
   test do
-    assert_match "IP address: ", shell_output("#{bin}/kalye")
+    assert_match "IP address:", shell_output(bin/"kalye")
   end
 end
