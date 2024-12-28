@@ -14,6 +14,6 @@ class Ayusin < Formula
   end
 
   test do
-    assert_match " Completed: ", shell_output("#{bin}/ayusin -n")
+    assert_match " Completed: ", shell_output(bin/"ayusin -n")
   end
 end

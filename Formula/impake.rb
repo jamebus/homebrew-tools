@@ -21,7 +21,7 @@ class Impake < Formula
 
   test do
     (testpath/"testing").write "This is a test"
-    output = shell_output("#{bin}/impake #{testpath}/testing 2>/dev/null")
+    output = shell_output(bin/"impake #{testpath}/testing 2>/dev/null")
     assert_match %r{URL:\s+https://\w+}, output
   end
 end
