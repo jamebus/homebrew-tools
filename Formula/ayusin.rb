@@ -1,8 +1,8 @@
 class Ayusin < Formula
   desc "Automated housekeeping tasks"
   homepage "https://github.com/jamebus/ayusin"
-  url "https://github.com/jamebus/ayusin/archive/refs/tags/v4.1.0.tar.gz"
-  sha256 "6d3fb5fc1c06f775bd0531cc91b8541696f845336393eca7e649d4b430d40256"
+  url "https://github.com/jamebus/ayusin/archive/refs/tags/v4.2.0.tar.gz"
+  sha256 "3a4e8f8533f45f7d5813e5edfe8a9830527e3b295cf29f721904e7698cce2292"
   head "https://github.com/jamebus/ayusin.git", branch: "main"
 
   depends_on "debianutils"
@@ -14,6 +14,6 @@ class Ayusin < Formula
   end
 
   test do
-    assert_match " Completed: ", shell_output(bin/"ayusin -n")
+    assert_match " Completed: ", shell_output("#{bin}/ayusin -n")
   end
 end
