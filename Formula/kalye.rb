@@ -1,8 +1,8 @@
 class Kalye < Formula
   desc "Quickly find your IP address"
   homepage "https://github.com/jamebus/kalye"
-  url "https://github.com/jamebus/kalye/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "0b03783ece74065c388e25f7c116426ab76eb21bcb9c64a8102a1788b9c12461"
+  url "https://github.com/jamebus/kalye/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "2a82050febbb93a58483a6c1774a93da0eaaaf4682d303fcf0621819b043ef74"
   head "https://github.com/jamebus/kalye.git", branch: "main"
 
   depends_on "gum"
