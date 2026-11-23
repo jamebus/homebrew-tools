@@ -3,9 +3,9 @@
 lockfile_version = 4
 
 [[tools."gem:reek"]]
-version = "6.5.0"
+version = "6.6.0"
 backend = "gem:reek"
-specifiers = ["6.5.0"]
+specifiers = ["6.6.0"]
 
 [[tools."gem:rubocop"]]
 version = "1.92.3"
