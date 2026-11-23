@@ -8,9 +8,9 @@ backend = "gem:reek"
 specifiers = ["6.5.0"]
 
 [[tools."gem:rubocop"]]
-version = "1.91.0"
+version = "1.92.3"
 backend = "gem:rubocop"
-specifiers = ["1.91.0"]
+specifiers = ["1.92.3"]
 
 [[tools.ruby]]
 version = "4.0.10"
